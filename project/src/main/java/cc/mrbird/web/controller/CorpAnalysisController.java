@@ -50,7 +50,7 @@ public class CorpAnalysisController extends BaseController{
         try {
         	entity.setCreateTime(new Date());
             this.corpService.addCorp(entity);
-            
+            //test commit
             return ResponseBo.ok("新增宏观数据成功！");
         } catch (Exception e) {
         	logger.error("新增宏观数据失败", e);
