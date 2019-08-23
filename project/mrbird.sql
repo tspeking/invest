@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50717
 File Encoding         : 65001
 
-Date: 2019-08-07 17:04:36
+Date: 2019-08-23 18:11:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -165,7 +165,7 @@ CREATE TABLE `qrtz_scheduler_state` (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('MyScheduler', 'DESKTOP-SMCTRIG1565163582275', '1565163981958', '15000');
+INSERT INTO `qrtz_scheduler_state` VALUES ('MyScheduler', 'DESKTOP-SMCTRIG1566554467675', '1566554857600', '15000');
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -272,7 +272,7 @@ CREATE TABLE `t_corp` (
   `create_time` datetime DEFAULT NULL COMMENT '创建时间',
   `last_modify_time` datetime DEFAULT NULL COMMENT '最后修改时间',
   PRIMARY KEY (`corp_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_corp
@@ -280,45 +280,49 @@ CREATE TABLE `t_corp` (
 INSERT INTO `t_corp` VALUES ('8', '5G', '通讯设备', '中兴通讯', '2', '1', '1', '1、运营商业务        2、政企业务            3、消费者业务', '9%', '17-20', '27', '29', '', '1', '10', '移动通讯设备厂商，上市5G设备公司龙头企业，有定价权。中兴通讯业务目前主要分为三大板块：运营商网络、政企业务、消费者业务，涵盖核心网、终端、无线、接入、承载、云计算、智能手机、可穿戴设备、芯片、能源基础设施等产品。                    运营商业务：聚焦运营商网络演进需求，提供无线接入、有线接入、承载网络、核心网、电信软件系统与服务等创新技术和产品解决方案。                                                  政企业务：聚焦政企业务需求，基于云计算、通讯网络、物联网、大数据以及相关核心M-ICT产品，为政府及企业信息化提供顶层设计和咨询服务、信息化综合方案的落地建设服务和运营维护服务。                                                                                           消费者服务：聚焦消费者智慧体验，兼顾行业需求，开发、生产和销售智能手机、移动数据终端、家庭信息终端、融合创新终端、可穿戴设备等产品，以及相关的软件应用与增值服务。\r\n', '主设备企业，确定性很高。（20190613）中心通讯和沪电股份，这次回调，都跌到了目标价附近。\r\n', '2019-06-18 08:39:11', '2019-08-06 03:21:47');
 INSERT INTO `t_corp` VALUES ('9', '5G', '印制电路板（PCB）', '沪电股份', '2', '2', '2', '1、企业通讯市场板 2、汽车板                3、办公工业设备板 ', '', '9-10', '11.5', null, '', '2', '8', '主要业务分为两块，通讯市场板块占比60%左右，主要客户是华为、中兴以及外资厂商。第二大板块是汽车板块，占比20+%，汽车板块和龙头有差距。主要发力点是5G，公司战略发力点也是5G。5G方面和深南是主力厂商。\r\n', '深南电路和沪电股份是5G PCB业务主力厂商，深南电路第一，沪电股份第二。一叶孤城点评：沪电股份12.3元以上，属于合理估值的顶部。企业的估值，是不能逃脱行业商业模式的，PCB因为行业产能从海外向大陆转移，以及5G带来的新需求，整体业绩很好。但是这个行业，本质上属于电子制造业，不算高科技，看看研发投入占比就明白了。所以，估值很难长期在30倍以上。                                                                                        沪电主要做PCB，而这块不涉及自主可控，因为很多工厂可以做PCB。做高频高速版的华正新材、生益科技，它们做的，其他公司做不了，可以替代海外巨头罗杰斯的份额。\r\n', '2019-06-18 08:45:00', '2019-08-06 11:45:27');
 INSERT INTO `t_corp` VALUES ('11', '5G', '5G应用-电子-物联网', '和而泰', '2', '1', '2', '1、家用电器智能控制                            2、电动工具智能控制器                         3、智能建筑与家居控制器                      4、汽车电子智能控制器                         5、LED                    6、新型智能控制器及智能硬件              7、射频芯片  \r\n', '', '8', '9-10', null, '', '2', '17', '', '亮点：收购铖昌科技，切入5G微波/毫米波射频芯片领域，铖昌科技是国内唯一一家承担国家大型号任务的民营企业。发力点5G、物联网。物联网很多技术路线可以不用5G，增速比较确定。\r\n', '2019-06-18 08:55:46', '2019-08-06 11:46:46');
-INSERT INTO `t_corp` VALUES ('12', '5G', '5G应用', '顺络电子', '', '2', '2', '', '', '18.2', '', null, '', '2', '25', '', '', '2019-06-18 08:56:47', '2019-08-07 07:16:59');
+INSERT INTO `t_corp` VALUES ('12', '5G', '5G应用', '顺络电子', '', '2', '2', '', '', '18.2', '', '', '', '2', '25', '', '    顺络是标准的华为产业链，来自华为营收占比超20%', '2019-06-18 08:56:47', '2019-08-08 03:25:59');
 INSERT INTO `t_corp` VALUES ('15', '5G', '5G应用-云计算', '宝信软件', '', '1', '1', '', '', '18-20', '23.5', '26', '', '2', '7', '', '宝信和光环相比，宝信好些。宝信本身有智能制造的业务，属于备受支持的工业互联网方向，而且订单很好。单纯比较IDC,宝钢作为大股东，对公司支持力度很大，所以公司扩张性很高。光环估值低，就算估值不涨，也可以赚个业绩增长钱。\r\n', '2019-06-18 09:01:12', '2019-08-06 02:53:27');
 INSERT INTO `t_corp` VALUES ('16', '5G', '5G应用-云计算-IDC', '光环新网', '', '2', '2', '', '', '13-15', '16.47', null, '', '2', '18', '', '与亚马逊合作，存在不少商誉，导致光环估值一直比较低。但它收购的企业，已完成业绩承诺，兼职概率很低。至于和亚马逊合作，本质上还是出租机柜给亚马逊，收取最终的固定费用。而且，北京的IDC很稀缺，就算不跟亚马逊合作，这些机柜也很好租出去。最后，亚马逊也没有理由停止跟公司合作。\r\n', '2019-06-18 09:02:01', '2019-08-06 11:48:04');
 INSERT INTO `t_corp` VALUES ('17', '5G', '5G应用-云计算-SaaS', '用友网络', '', '2', '2', '', '', '17-18.5', '23.5', '25.5', '', '2', '11', '', '         贸易战不影响云计算，而且会给自主可控板块带来炒作机会。软件属于标准科技股，而科技股会受到投资者风险偏好（情绪）和流动性的影响。那么，短期内价格因贸易战而下跌，是很正常的，但因为不影响企业的逻辑和盈利，可以利用下跌进行逆势布局。云计算偏消费，还是不错的行业。\r\n        SASS现在还不多，用友网络、广联达、石基信息。石基信息研发资本开支略高，也就是存在调节利润的情况。现阶段国内SASS企业很少，源于之前国内企业信息化水平比较低，所以全行业市值加起来还没有一个甲骨文大。但随着人力越来越贵，各行业都有机会出现SASS龙头。\r\n', '2019-06-18 09:03:17', '2019-08-06 03:21:08');
-INSERT INTO `t_corp` VALUES ('18', '5G', '5G应用-云计算', '石基信息', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '其实我当时在它和广联达之间，选择了很久。它们大逻辑很类似，分属于建筑行业信息化和酒店信息化SAAS标的。当时我选择广联达，主要考虑建筑行业信息化水平更低，设计、施工行业都有机会，而且广联达云转型更快。但石基信息也不差，目前云转型也推进顺利，也可以关注起来。\r\n', '2019-06-18 09:03:59', null);
+INSERT INTO `t_corp` VALUES ('18', '5G', '5G应用-云计算', '石基信息', '', '2', '2', '', '', '', '', '', '', '2', '31', '', '其实我当时在它和广联达之间，选择了很久。它们大逻辑很类似，分属于建筑行业信息化和酒店信息化SAAS标的。当时我选择广联达，主要考虑建筑行业信息化水平更低，设计、施工行业都有机会，而且广联达云转型更快。但石基信息也不差，目前云转型也推进顺利，也可以关注起来。\r\n', '2019-06-18 09:03:59', '2019-08-08 03:02:28');
 INSERT INTO `t_corp` VALUES ('19', '5G', '5G应用-云计算', '广联达', '', '2', '2', '', '', '23-25', '26.75', '30', '', '2', '9', '软件公司转型云计算后，可以给予很高的估值，就是因为客户粘性会提高、续费率会提高、自然销售费用率会降低。广联达是高研发投入，而且都计入当期管理费用，而没有资本化，等于没调节利润。至于销售费用高，是软件行业的通病，这是公司转型云计算的重要原因。广联达进展很好。                                                   科技股的估值方法，主要是根据PEG估值，再根据确定性给予不超过20%的折溢价。此外，如果要深入研究，企业所处的生命周期的位置、行业发展空间、商业模式等，都会对估值有一定影响。对于云计算，IDC就用PEG，SASS就用市销率。\r\n', '', '2019-06-18 09:04:55', '2019-08-06 02:56:02');
-INSERT INTO `t_corp` VALUES ('20', '5G', '5G应用-车联网', '四维图新', '', '2', '2', '', '', null, null, null, '', '2', '9999', '四维，是5G车联网应用中，A股最纯正的标的。高精度的地图单车价值量很大，而且门槛很高，四维拥有先发优势、卡位精准。所以对它而言，关键是什么价格介入。', '', '2019-06-18 09:06:05', '2019-06-26 11:39:49');
-INSERT INTO `t_corp` VALUES ('21', '5G', '5G应用-车联网', '千方科技', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:06:31', null);
-INSERT INTO `t_corp` VALUES ('22', '5G', '5G应用-网络可视化', '亿联网络', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:06:52', null);
-INSERT INTO `t_corp` VALUES ('23', '5G', '5G应用-网络可视化', '齐心集团', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '5G最有前景的应用，可能是车联网。但最快爆发的应用，很可能是高清视频和网络可视化。等于是一些，4G时代可以做，但做的不好的事情，所以，对这个方向是很看好的。这里面没什么好标的。在做的主要有三个企业，亿联网络在国外比较牛，齐心集团的云视通国内挺牛，二六三彻底沦为题材股。\r\n', '2019-06-18 09:07:22', null);
+INSERT INTO `t_corp` VALUES ('20', '5G', '5G应用-车联网', '四维图新', '', '2', '2', '', '', '', '', '', '', '2', '32', '四维，是5G车联网应用中，A股最纯正的标的。高精度的地图单车价值量很大，而且门槛很高，四维拥有先发优势、卡位精准。所以对它而言，关键是什么价格介入。', '', '2019-06-18 09:06:05', '2019-08-08 03:02:44');
+INSERT INTO `t_corp` VALUES ('21', '5G', '5G应用-车联网', '千方科技', '', '2', '2', '', '', '', '', '', '', '2', '33', '', '', '2019-06-18 09:06:31', '2019-08-08 03:02:59');
+INSERT INTO `t_corp` VALUES ('22', '5G', '5G应用-网络可视化', '亿联网络', '', '2', '2', '', '', '', '', '', '', '2', '34', '', '', '2019-06-18 09:06:52', '2019-08-08 03:03:16');
+INSERT INTO `t_corp` VALUES ('23', '5G', '5G应用-网络可视化', '齐心集团', '', '2', '2', '', '', '', '', '', '', '2', '35', '', '5G最有前景的应用，可能是车联网。但最快爆发的应用，很可能是高清视频和网络可视化。等于是一些，4G时代可以做，但做的不好的事情，所以，对这个方向是很看好的。这里面没什么好标的。在做的主要有三个企业，亿联网络在国外比较牛，齐心集团的云视通国内挺牛，二六三彻底沦为题材股。\r\n', '2019-06-18 09:07:22', '2019-08-08 03:03:35');
 INSERT INTO `t_corp` VALUES ('24', '酿酒', '白酒-高端酒', '泸州老窖', '', '2', '2', '', '', '57', '63', '69', '', '2', '21', '', '', '2019-06-18 09:09:40', '2019-08-06 12:04:59');
-INSERT INTO `t_corp` VALUES ('25', '酿酒', '白酒-高端酒', '五粮液', '', '2', '2', '', '', '50-60', '90', '110-115', '', '2', '1', '', '为了方面思考，市盈率用股价除以分析师预估的当年盈利，具体数值炒股软件都有。（高ROE，低估值，是国内外最成功的的投资策略之一）。茅五泸洋占了行业净利润的67%。\r\n\r\n     1:、短期：茅五泸、汾古今之外多数白酒中报会一般，\r\n2、长期：之前投资可选十几家白酒股，未来主要就投资顶尖几家即可，其他白酒可以放弃了。\r\n\r\n    这两个结论，也并不难得到。第一条，密切跟踪动销就可以得到；第二条，高端白酒市场扩容，以及白酒消费向头部品牌集中。\r\n\r\n\r\n\r\n\r\n\r\n', '2019-06-18 09:11:22', '2019-08-06 04:04:50');
+INSERT INTO `t_corp` VALUES ('25', '酿酒', '白酒-高端酒', '五粮液', '', '2', '2', '', '', '50-60', '90', '110-115', '', '2', '1', '', '为了方面思考，市盈率用股价除以分析师预估的当年盈利，具体数值炒股软件都有。（高ROE，低估值，是国内外最成功的的投资策略之一）。茅五泸洋占了行业净利润的67%。\r\n\r\n     1:、短期：茅五泸、汾古今之外多数白酒中报会一般，\r\n2、长期：之前投资可选十几家白酒股，未来主要就投资顶尖几家即可，其他白酒可以放弃了。\r\n\r\n    这两个结论，也并不难得到。第一条，密切跟踪动销就可以得到；第二条，高端白酒市场扩容，以及白酒消费向头部品牌集中。\r\n叶城（20190808） 高端白酒五粮液和老窖，是茅台价格上涨最大的受益者，其次五粮液比老窖多了一个逻辑，就是改革。别看改革就两个字，五粮液公司利益盘根错节，之前改革几年都没成功，今年等于才初见成效，我自己分析，这一轮改革至少让企业收益2-3年。\r\n\r\n\r\n\r\n\r\n\r\n', '2019-06-18 09:11:22', '2019-08-08 03:27:41');
 INSERT INTO `t_corp` VALUES ('26', '酿酒', '白酒-次高端', '洋河股份', '', '2', '2', '', '', '80-90', '100', null, '', '2', '15', '', '洋河股份较其他白酒涨幅较少，原因：1、动销不好，导致投资者对他的业绩预期不好，一季报也确实一般，所以估值低。目前洋河合理估值是22倍，五粮液25倍。 2、白酒行业的红利，在于茅台提价后留下的空白价格带，五粮液和泸州老窖最受益，洋河只有占收入30%得剑南春收益。\r\n        高端白酒市场扩容，导致茅五泸供不应求，后两家是动销比较好。洋河在次高端酒中的优势很突出，但次高端白酒跟经济关联度高，今年整体压力不小，长期看好洋河，但现阶段它不是重点。\r\n\r\n', '2019-06-18 09:12:06', '2019-08-06 11:41:21');
 INSERT INTO `t_corp` VALUES ('28', '家电', '白电-空调', '格力电器', '', '1', '1', '1、主营空调，占公司业务营收八成以上\r\n', '21.9% 注意：市场份额持续下降\r\n', '', '', null, '', '1', '23', '空调行业龙头，市场占有率第一，有很好的护城河、议价能力。除了空调业务，其他业务经营比较惨淡，现阶段估值已修复。\r\n', '绝对估值法：279+ 297 +316+ 337 +359 +382 +407+ 433+ 461 +491 = 3762\r\n', '2019-06-18 09:39:46', '2019-08-07 07:14:20');
 INSERT INTO `t_corp` VALUES ('29', '家电', '白电', '美的集团', '', '1', '1', '', '', '', '', null, '', '2', '22', '', '绝对估值法：215 + 229 + 243+260+277+294+314+334+356 + 379 = 2901\r\n', '2019-06-18 09:40:56', '2019-08-07 07:14:07');
-INSERT INTO `t_corp` VALUES ('31', '家电', '厨电', '浙江美大', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:42:22', null);
+INSERT INTO `t_corp` VALUES ('31', '家电', '厨电', '浙江美大', '', '2', '2', '', '', '', '', '', '', '2', '36', '', '', '2019-06-18 09:42:22', '2019-08-08 03:03:48');
 INSERT INTO `t_corp` VALUES ('33', '电子', '消费电子', '立讯精密', '2', '1', '2', '1、无线充电、LCP天线、马达                                     2、微电声、AirProds、Watch配件                          3、通讯设备、汽车 20%\r\n', 'AirProds 60%\r\n', '13-15', '17', '19', '', '2', '6', '为苹果、华为供货，处在产业中游位置，没有议价权，公司业绩受订单量影响。优势：最近几年业绩增长不错，值得持续跟踪\r\n', '', '2019-06-18 09:44:58', '2019-08-06 02:23:14');
 INSERT INTO `t_corp` VALUES ('34', '保险', '保险', '中国平安', '', '1', '1', '1、寿险                    2、银行                    3、金融科技\r\n', '', '58-62', '68-74', '75', '', '2', '19', '具有品牌优势，护城河优势\r\n', '平安PEV在1-1.1之间是有安全边际的。平安19年每股内含价值，在65元左右，所以1-1.1倍PEV，对应65-71元。\r\n', '2019-06-18 09:46:18', '2019-08-06 11:50:49');
 INSERT INTO `t_corp` VALUES ('39', '银行', '银行', '招商银行', '', '2', '2', '', '', '22-24', '28-30', null, '', '2', '20', '', '', '2019-06-18 09:48:25', '2019-08-06 11:51:32');
-INSERT INTO `t_corp` VALUES ('40', '银行', '银行', '宁波银行', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:48:53', null);
-INSERT INTO `t_corp` VALUES ('43', '券商', '券商', '华泰证券', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:49:46', null);
-INSERT INTO `t_corp` VALUES ('44', '券商', '券商', '中信证券', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:50:03', null);
+INSERT INTO `t_corp` VALUES ('43', '券商', '券商', '华泰证券', '', '2', '2', '', '', '', '', '', '', '2', '37', '', '', '2019-06-18 09:49:46', '2019-08-08 03:04:33');
+INSERT INTO `t_corp` VALUES ('44', '券商', '券商', '中信证券', '', '2', '2', '', '', '', '', '', '', '2', '38', '', '', '2019-06-18 09:50:03', '2019-08-08 03:04:44');
 INSERT INTO `t_corp` VALUES ('45', '医药', '医药', '一心堂', '', '2', '2', '', '', '14.5-16.5', '20', null, '', '2', '4', '', '看懂医药股投资的大逻辑，就会发现，这些年医药牛股，大多来自两个方向：1、偏消费属性：简单说就是，消费者直接买单，而很少使用医保，比如长春高新、我武生物、爱尔眼科、云南白药。 2、创新药方向：我国人力成本低，强政策推动，催生的大牛股注入恒瑞医药、泰格医药。', '2019-06-18 09:50:39', '2019-08-06 11:43:02');
-INSERT INTO `t_corp` VALUES ('46', '医药', '医药', '恒瑞医药', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:51:02', null);
-INSERT INTO `t_corp` VALUES ('47', '医药', '医药', '爱尔眼科', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:51:21', null);
-INSERT INTO `t_corp` VALUES ('48', '安全可控', '安全可控', '北方华创', '', '2', '2', '', '', null, null, null, '', '2', '9999', '电子企业重点关注两家，立讯精密和北方华创。北方华创现阶段估值贵，买入没有安全边际。\r\n', '', '2019-06-18 09:52:17', null);
-INSERT INTO `t_corp` VALUES ('49', '安全可控', '安全可控', '中科曙光', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:52:34', null);
-INSERT INTO `t_corp` VALUES ('51', '消费品', '必须消费品-调味品', '海天味业', '', '2', '2', '', '', null, null, null, '', '2', '9999', '海天买入能接受的极限估值是40倍，也就是PEG=2的位置。\r\n', '', '2019-06-18 09:53:46', null);
+INSERT INTO `t_corp` VALUES ('46', '医药', '医药', '恒瑞医药', '', '2', '2', '', '', '', '', '', '', '2', '39', '', '', '2019-06-18 09:51:02', '2019-08-08 03:04:55');
+INSERT INTO `t_corp` VALUES ('47', '医药', '医药', '爱尔眼科', '', '2', '2', '', '', '', '', '', '', '2', '40', '', '', '2019-06-18 09:51:21', '2019-08-08 03:05:06');
+INSERT INTO `t_corp` VALUES ('48', '安全可控', '安全可控', '北方华创', '', '2', '2', '', '', '', '', '', '', '2', '41', '电子企业重点关注两家，立讯精密和北方华创。北方华创现阶段估值贵，买入没有安全边际。\r\n', '', '2019-06-18 09:52:17', '2019-08-08 03:05:19');
+INSERT INTO `t_corp` VALUES ('49', '安全可控', '安全可控', '中科曙光', '', '2', '2', '', '', '', '', '', '', '2', '42', '', '', '2019-06-18 09:52:34', '2019-08-08 03:05:31');
+INSERT INTO `t_corp` VALUES ('51', '消费品', '必须消费品-调味品', '海天味业', '', '2', '2', '', '', '', '', '', '', '2', '43', '海天买入能接受的极限估值是40倍，也就是PEG=2的位置。\r\n', '', '2019-06-18 09:53:46', '2019-08-08 03:05:42');
 INSERT INTO `t_corp` VALUES ('52', '消费品', '必须消费品-调味品', '中炬高新', '', '2', '2', '', '', '24-27', '31.5', null, '', '2', '12', '3000亿调味品市场，酱油500亿，是第一大单品。所以酱油企业的渠道控制和品类扩张能力是最好的。调味品里面，海天太贵，最看好主做酱油的中炬高新。\r\n', '', '2019-06-18 09:54:41', '2019-08-06 11:35:40');
 INSERT INTO `t_corp` VALUES ('53', '消费品', '必须消费品-调味品', '恒顺醋业', '', '2', '2', '', '', '9.3-10.3', '12', null, '', '2', '14', '', '', '2019-06-18 09:55:29', '2019-08-06 11:39:19');
-INSERT INTO `t_corp` VALUES ('54', '消费品', '必须消费品-调味品', '涪陵榨菜', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '', '2019-06-18 09:55:51', null);
-INSERT INTO `t_corp` VALUES ('56', '工程机械', '工程机械', '三一重工', '', '2', '2', '', '', null, null, null, '', '2', '9999', '', '这个行业，赢家通吃，而且有估值溢价。三一是标准的高端制造。对它比去年乐观一些，因为从今年了解到的信息，公司定价权明显提升。很多产品，相比同行产品，价格要高一些，还可以适当的提价，销量也不错。反映的是，公司的竞争力和护城河已经起来了，而外销占比不断提高，大逻辑是通畅的。                            如果从高端制造业、定价权和外销占比提升的角度看，逻辑是顺畅的。只不过，现阶段处于周期景气相对较高的位置，短期没法入手。我给一个标准，你可以参考，就是假设三一未来业绩不再增长，那么按照格雷厄姆的标准，给8.5倍估值。到这个水平，可以考虑。\r\n', '2019-06-18 09:57:36', null);
+INSERT INTO `t_corp` VALUES ('54', '消费品', '必须消费品-调味品', '涪陵榨菜', '', '2', '2', '', '', '', '', '', '', '2', '44', '', '', '2019-06-18 09:55:51', '2019-08-08 03:05:52');
+INSERT INTO `t_corp` VALUES ('56', '工程机械', '工程机械', '三一重工', '', '2', '2', '', '', '', '', '', '', '2', '45', '', '这个行业，赢家通吃，而且有估值溢价。三一是标准的高端制造。对它比去年乐观一些，因为从今年了解到的信息，公司定价权明显提升。很多产品，相比同行产品，价格要高一些，还可以适当的提价，销量也不错。反映的是，公司的竞争力和护城河已经起来了，而外销占比不断提高，大逻辑是通畅的。                            如果从高端制造业、定价权和外销占比提升的角度看，逻辑是顺畅的。只不过，现阶段处于周期景气相对较高的位置，短期没法入手。我给一个标准，你可以参考，就是假设三一未来业绩不再增长，那么按照格雷厄姆的标准，给8.5倍估值。到这个水平，可以考虑。\r\n', '2019-06-18 09:57:36', '2019-08-08 03:06:04');
 INSERT INTO `t_corp` VALUES ('57', '免税', '旅游', '中国国旅', '', '2', '2', '', '', '50-58', '69.5', null, '', '2', '2', '中国国旅是值得长期持有的。持有和买入是有区别的，买入的话，要有安全边际。持有的话，股价没有大的泡沫都可以。大逻辑还是很顺畅的，三大逻辑：海外消费回流、居民境内免税购物渗透率、存量及新增免税购物渠道。所以今年把免税排消费股第二位。\r\n', '', '2019-06-18 09:58:44', '2019-08-05 09:33:21');
 INSERT INTO `t_corp` VALUES ('58', '免税', '机场', '白云机场', '', '2', '2', '', '', '11-12', '14.5', '15.95', '', '2', '5', '', '', '2019-06-18 09:59:16', '2019-08-06 12:16:56');
 INSERT INTO `t_corp` VALUES ('59', '免税', '机场', '上海机场', '', '2', '2', '', '', '', '', null, '', '2', '24', '', '上海机场现在的估值挺合理的，不算高。上海机场，这两年大行情背后，是估值体系的切换。在过去，大家认为它是公用事业股，那么估值基本在20倍左右，靠业绩推动股价上涨。但经两年大涨，估值提升的背后，是投资者看到机场正在变成优秀的免税企业，也就是消费股。此外，也是投资者给予的确定性溢价的过程。\r\n', '2019-06-18 09:59:45', '2019-08-07 07:15:45');
-INSERT INTO `t_corp` VALUES ('60', '消费品', '可选消费品-乳业', '伊利股份', '', '2', '2', '', '', null, null, null, '', '2', '9999', '消费股的逻辑，是消费品牌化和行业集中度的提升。双汇是消费股不假，但营收大头的屠宰业务没什么品牌，自然无法受益于这个大趋势，顶多受益于屠宰业务集中度提升。此外，从业绩上，明显看到，双汇业绩没大的改善。\r\n', '', '2019-06-18 10:00:39', null);
+INSERT INTO `t_corp` VALUES ('60', '消费品', '可选消费品-乳业', '伊利股份', '', '2', '2', '', '', '', '', '', '', '2', '46', '消费股的逻辑，是消费品牌化和行业集中度的提升。双汇是消费股不假，但营收大头的屠宰业务没什么品牌，自然无法受益于这个大趋势，顶多受益于屠宰业务集中度提升。此外，从业绩上，明显看到，双汇业绩没大的改善。\r\n', '', '2019-06-18 10:00:39', '2019-08-08 03:06:15');
 INSERT INTO `t_corp` VALUES ('61', '消费', '电子烟', '劲嘉股份', '2', '1', '2', '电子烟', '', '8-9.5', '12', null, '', '2', '3', '', '', '2019-08-05 09:34:52', null);
 INSERT INTO `t_corp` VALUES ('62', '化妆品', '化妆品', '珀莱雅', '3', '1', '2', '', '', '41-45', '52', null, '', '2', '13', '', '', '2019-08-06 11:37:08', null);
 INSERT INTO `t_corp` VALUES ('63', '医药', '医药', '仁和药业', '', '2', '2', '', '', '6-7', '7.5', null, '', '1', '16', '', '', '2019-08-06 11:44:43', '2019-08-06 12:20:14');
+INSERT INTO `t_corp` VALUES ('64', '金融', '银行', '平安银行', '', '2', '2', '', '', '', '', '', '', '2', '26', '', '    叶城（20190808）平安前几年因为发放了很多无抵押贷款等，导致有历史负担，但从中报看，不良率等都在下滑，各项数据基本都在好转。平安强大之处，在于平安集团给的资源，以及公司在科技金融方面的进展，内部还有一个因素是，民生系的人走了后，目前公司在新管理层的带领下，终于走在了正确的道路上\r\n', '2019-08-08 02:53:26', null);
+INSERT INTO `t_corp` VALUES ('65', '金融', '银行', '宁波银行', '', '2', '2', '', '', '', '', '', '', '2', '27', '', '    叶城（20190808） 宁波银行，它是之前拨备太高，那未来就可以少拨备，也就是进入利润释放的时候了。', '2019-08-08 02:57:40', null);
+INSERT INTO `t_corp` VALUES ('66', '金融', '银行', '招商银行', '', '2', '2', '', '', '', '', '', '', '2', '28', '', '叶城（20190808） 招商银行，是整体风控和零售业务发展的好。', '2019-08-08 02:58:57', null);
+INSERT INTO `t_corp` VALUES ('67', '金融', '银行', '兴业银行', '', '2', '2', '', '', '', '', '', '', '2', '29', '叶城（20190808） 兴业银行，基本面改善比较大。', '', '2019-08-08 03:00:44', null);
+INSERT INTO `t_corp` VALUES ('68', '金融', '银行', '中国工商银行', '', '2', '2', '', '', '', '', '', '', '2', '30', '', '叶城（20190808） 工行，跟宏观经济关联度高。', '2019-08-08 03:01:55', null);
 
 -- ----------------------------
 -- Table structure for t_corp_quota_trend
@@ -474,7 +478,7 @@ CREATE TABLE `t_finance_trend` (
   `type` varchar(2) NOT NULL COMMENT '1 融资余额 2 CPI 3 M2 4 社融 5 GDP季度 6 乘用车同比 7 乘用车环比 8 沪深交易量走势',
   PRIMARY KEY (`finance_id`),
   UNIQUE KEY `quota_name` (`quota_name`,`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=479 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=548 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_finance_trend
@@ -906,6 +910,73 @@ INSERT INTO `t_finance_trend` VALUES ('475', '20190807', '3762', '2019-08-07 07:
 INSERT INTO `t_finance_trend` VALUES ('476', '20190807', '-22.47', '2019-08-07 07:19:17', '9');
 INSERT INTO `t_finance_trend` VALUES ('477', '20190807', '-4.82', '2019-08-07 07:19:31', '10');
 INSERT INTO `t_finance_trend` VALUES ('478', '20190807', '-27.29', '2019-08-07 07:19:48', '11');
+INSERT INTO `t_finance_trend` VALUES ('479', '20190807', '8865', '2019-08-08 09:38:44', '1');
+INSERT INTO `t_finance_trend` VALUES ('480', '20190808', '3671', '2019-08-08 09:39:06', '8');
+INSERT INTO `t_finance_trend` VALUES ('481', '20190808', '11.88', '2019-08-08 09:39:21', '9');
+INSERT INTO `t_finance_trend` VALUES ('482', '20190808', '17.81', '2019-08-08 09:39:34', '10');
+INSERT INTO `t_finance_trend` VALUES ('483', '20190808', '29.69', '2019-08-08 09:39:46', '11');
+INSERT INTO `t_finance_trend` VALUES ('484', '20190808', '8846', '2019-08-09 07:38:46', '1');
+INSERT INTO `t_finance_trend` VALUES ('485', '20190809', '3806', '2019-08-09 07:39:15', '8');
+INSERT INTO `t_finance_trend` VALUES ('486', '20190809', '2.07', '2019-08-09 07:39:33', '9');
+INSERT INTO `t_finance_trend` VALUES ('487', '20190809', '16.27', '2019-08-09 07:39:54', '10');
+INSERT INTO `t_finance_trend` VALUES ('488', '20190809', '18.34', '2019-08-09 07:40:11', '11');
+INSERT INTO `t_finance_trend` VALUES ('489', '201907', '2.8', '2019-08-09 07:41:09', '2');
+INSERT INTO `t_finance_trend` VALUES ('490', '20190809', '8808', '2019-08-12 09:25:40', '1');
+INSERT INTO `t_finance_trend` VALUES ('491', '20190812', '3627', '2019-08-12 09:26:09', '8');
+INSERT INTO `t_finance_trend` VALUES ('492', '20190812', '7.05', '2019-08-12 09:26:21', '9');
+INSERT INTO `t_finance_trend` VALUES ('493', '20190812', '21.22', '2019-08-12 09:26:32', '10');
+INSERT INTO `t_finance_trend` VALUES ('494', '20190812', '28.27', '2019-08-12 09:26:45', '11');
+INSERT INTO `t_finance_trend` VALUES ('495', '201907', '8.1', '2019-08-12 09:27:20', '3');
+INSERT INTO `t_finance_trend` VALUES ('496', '201907', '10100', '2019-08-12 09:27:34', '4');
+INSERT INTO `t_finance_trend` VALUES ('497', '201906', '10.7', '2019-08-12 09:36:24', '7');
+INSERT INTO `t_finance_trend` VALUES ('499', '201906', '-7.8', '2019-08-12 09:36:56', '6');
+INSERT INTO `t_finance_trend` VALUES ('500', '201907', '-4.3', '2019-08-13 03:49:28', '6');
+INSERT INTO `t_finance_trend` VALUES ('501', '20907', '-12.1', '2019-08-13 03:50:09', '7');
+INSERT INTO `t_finance_trend` VALUES ('502', '20190812', '8818', '2019-08-13 10:24:10', '1');
+INSERT INTO `t_finance_trend` VALUES ('503', '20190813', '3385', '2019-08-13 10:24:28', '8');
+INSERT INTO `t_finance_trend` VALUES ('504', '20190813', '-15.82', '2019-08-13 10:24:40', '9');
+INSERT INTO `t_finance_trend` VALUES ('505', '20190813', '-5.13', '2019-08-13 10:24:52', '10');
+INSERT INTO `t_finance_trend` VALUES ('506', '20190813', '-20.95', '2019-08-13 10:25:05', '11');
+INSERT INTO `t_finance_trend` VALUES ('507', '20190813', '8822', '2019-08-14 10:13:02', '1');
+INSERT INTO `t_finance_trend` VALUES ('508', '20190814', '4023', '2019-08-14 10:13:50', '8');
+INSERT INTO `t_finance_trend` VALUES ('509', '20190814', '-3.67', '2019-08-14 10:14:04', '9');
+INSERT INTO `t_finance_trend` VALUES ('510', '20190814', '19.03', '2019-08-14 10:14:16', '10');
+INSERT INTO `t_finance_trend` VALUES ('511', '20190814', '15.36', '2019-08-14 10:14:28', '11');
+INSERT INTO `t_finance_trend` VALUES ('513', '20190814', '8831', '2019-08-15 10:15:01', '1');
+INSERT INTO `t_finance_trend` VALUES ('514', '20190815', '3938', '2019-08-15 10:15:19', '8');
+INSERT INTO `t_finance_trend` VALUES ('515', '20190815', '-4.29', '2019-08-15 10:15:35', '9');
+INSERT INTO `t_finance_trend` VALUES ('516', '20190815', '10.30', '2019-08-15 10:15:48', '10');
+INSERT INTO `t_finance_trend` VALUES ('517', '20190815', '6.01', '2019-08-15 10:16:01', '11');
+INSERT INTO `t_finance_trend` VALUES ('518', '20190815', '8822', '2019-08-16 12:16:33', '1');
+INSERT INTO `t_finance_trend` VALUES ('519', '20190816', '4302', '2019-08-16 12:16:52', '8');
+INSERT INTO `t_finance_trend` VALUES ('520', '20190816', '-1.03', '2019-08-16 12:17:07', '9');
+INSERT INTO `t_finance_trend` VALUES ('521', '20190816', '2.54', '2019-08-16 12:17:20', '10');
+INSERT INTO `t_finance_trend` VALUES ('522', '20190816', '1.51', '2019-08-16 12:17:35', '11');
+INSERT INTO `t_finance_trend` VALUES ('523', '20190816', '8822', '2019-08-19 12:11:14', '1');
+INSERT INTO `t_finance_trend` VALUES ('524', '20190819', '5815', '2019-08-19 12:11:34', '8');
+INSERT INTO `t_finance_trend` VALUES ('525', '20190819', '38.61', '2019-08-19 12:11:51', '9');
+INSERT INTO `t_finance_trend` VALUES ('526', '20190819', '46.22', '2019-08-19 12:12:04', '10');
+INSERT INTO `t_finance_trend` VALUES ('527', '20190819', '84.23', '2019-08-19 12:12:17', '11');
+INSERT INTO `t_finance_trend` VALUES ('528', '20190819', '8930', '2019-08-20 10:20:53', '1');
+INSERT INTO `t_finance_trend` VALUES ('529', '20190820', '5236', '2019-08-20 10:21:10', '8');
+INSERT INTO `t_finance_trend` VALUES ('530', '20190820', '-3.68', '2019-08-20 10:21:26', '9');
+INSERT INTO `t_finance_trend` VALUES ('531', '20190820', '-4.71', '2019-08-20 10:21:41', '10');
+INSERT INTO `t_finance_trend` VALUES ('532', '20190820', '-8.39', '2019-08-20 10:21:54', '11');
+INSERT INTO `t_finance_trend` VALUES ('533', '20190820', '8975', '2019-08-21 10:13:38', '1');
+INSERT INTO `t_finance_trend` VALUES ('534', '20190821', '4543', '2019-08-21 10:13:56', '8');
+INSERT INTO `t_finance_trend` VALUES ('535', '20190821', '14.32', '2019-08-21 10:14:07', '9');
+INSERT INTO `t_finance_trend` VALUES ('536', '20190821', '8.91', '2019-08-21 10:14:18', '10');
+INSERT INTO `t_finance_trend` VALUES ('537', '20190821', '23.23', '2019-08-21 10:14:32', '11');
+INSERT INTO `t_finance_trend` VALUES ('538', '20190821', '9006', '2019-08-22 09:50:11', '1');
+INSERT INTO `t_finance_trend` VALUES ('539', '20190822', '4401', '2019-08-22 09:50:29', '8');
+INSERT INTO `t_finance_trend` VALUES ('540', '20190822', '6.44', '2019-08-22 09:50:46', '9');
+INSERT INTO `t_finance_trend` VALUES ('541', '20190822', '12.69', '2019-08-22 09:50:59', '10');
+INSERT INTO `t_finance_trend` VALUES ('542', '20190822', '19.13', '2019-08-22 09:51:12', '11');
+INSERT INTO `t_finance_trend` VALUES ('543', '20190822', '9039', '2019-08-23 10:03:14', '1');
+INSERT INTO `t_finance_trend` VALUES ('544', '20190823', '4695', '2019-08-23 10:03:31', '8');
+INSERT INTO `t_finance_trend` VALUES ('545', '20190823', '0.9195', '2019-08-23 10:03:44', '9');
+INSERT INTO `t_finance_trend` VALUES ('546', '20190823', '14.46', '2019-08-23 10:03:58', '10');
+INSERT INTO `t_finance_trend` VALUES ('547', '20190823', '15.38', '2019-08-23 10:04:12', '11');
 
 -- ----------------------------
 -- Table structure for t_job
@@ -995,7 +1066,7 @@ CREATE TABLE `t_log` (
   `CREATE_TIME` datetime DEFAULT NULL COMMENT '创建时间',
   `location` varchar(50) DEFAULT NULL COMMENT '操作地点',
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=1743 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1852 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of t_log
@@ -1910,6 +1981,115 @@ INSERT INTO `t_log` VALUES ('1739', 'MrBird', '新增宏观数据', '56', 'cc.mr
 INSERT INTO `t_log` VALUES ('1740', 'MrBird', '新增宏观数据', '56', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@6f5fb52\"', '127.0.0.1', '2019-08-07 07:19:17', '内网IP|0|0|内网IP|内网IP');
 INSERT INTO `t_log` VALUES ('1741', 'MrBird', '新增宏观数据', '57', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@1ef57be5\"', '127.0.0.1', '2019-08-07 07:19:31', '内网IP|0|0|内网IP|内网IP');
 INSERT INTO `t_log` VALUES ('1742', 'MrBird', '新增宏观数据', '106', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@7e6f0f69\"', '127.0.0.1', '2019-08-07 07:19:48', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1743', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Wed Aug 07 15:05:59 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-08 02:50:23', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1744', 'MrBird', '新增企业信息', '111', 'cc.mrbird.web.controller.CorpAnalysisController.addCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@56b8bf1e\"', '127.0.0.1', '2019-08-08 02:53:27', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1745', 'MrBird', '新增企业信息', '170', 'cc.mrbird.web.controller.CorpAnalysisController.addCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@4dabcee5\"', '127.0.0.1', '2019-08-08 02:57:40', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1746', 'MrBird', '新增企业信息', '82', 'cc.mrbird.web.controller.CorpAnalysisController.addCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@7e2fc557\"', '127.0.0.1', '2019-08-08 02:58:57', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1747', 'MrBird', '新增企业信息', '91', 'cc.mrbird.web.controller.CorpAnalysisController.addCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@34dd75d0\"', '127.0.0.1', '2019-08-08 03:00:44', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1748', 'MrBird', '新增企业信息', '62', 'cc.mrbird.web.controller.CorpAnalysisController.addCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@48e85c5d\"', '127.0.0.1', '2019-08-08 03:01:55', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1749', 'MrBird', '修改企业信息', '129', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@77aa4a6a\"', '127.0.0.1', '2019-08-08 03:02:28', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1750', 'MrBird', '修改企业信息', '90', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@55c6f525\"', '127.0.0.1', '2019-08-08 03:02:45', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1751', 'MrBird', '修改企业信息', '74', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@42204f61\"', '127.0.0.1', '2019-08-08 03:02:59', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1752', 'MrBird', '修改企业信息', '81', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@15cf80a4\"', '127.0.0.1', '2019-08-08 03:03:16', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1753', 'MrBird', '修改企业信息', '72', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@2984617c\"', '127.0.0.1', '2019-08-08 03:03:35', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1754', 'MrBird', '修改企业信息', '77', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@76022b6f\"', '127.0.0.1', '2019-08-08 03:03:49', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1755', 'MrBird', '删除企业信息', '104', 'cc.mrbird.web.controller.CorpAnalysisController.deleteCorps()', 'ids: \"40\"', '127.0.0.1', '2019-08-08 03:04:08', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1756', 'MrBird', '修改企业信息', '57', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@2b6c38e8\"', '127.0.0.1', '2019-08-08 03:04:33', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1757', 'MrBird', '修改企业信息', '80', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@4e4d1d23\"', '127.0.0.1', '2019-08-08 03:04:44', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1758', 'MrBird', '修改企业信息', '52', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@431c89d\"', '127.0.0.1', '2019-08-08 03:04:55', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1759', 'MrBird', '修改企业信息', '31', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@46d7d637\"', '127.0.0.1', '2019-08-08 03:05:06', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1760', 'MrBird', '修改企业信息', '53', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@2efa0e6e\"', '127.0.0.1', '2019-08-08 03:05:19', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1761', 'MrBird', '修改企业信息', '83', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@2d7545df\"', '127.0.0.1', '2019-08-08 03:05:31', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1762', 'MrBird', '修改企业信息', '71', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@318026ba\"', '127.0.0.1', '2019-08-08 03:05:42', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1763', 'MrBird', '修改企业信息', '150', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@46ad635b\"', '127.0.0.1', '2019-08-08 03:05:52', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1764', 'MrBird', '修改企业信息', '68', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@1f32fc45\"', '127.0.0.1', '2019-08-08 03:06:04', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1765', 'MrBird', '修改企业信息', '69', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@69f8a9d4\"', '127.0.0.1', '2019-08-08 03:06:15', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1766', 'MrBird', '修改企业信息', '73', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@4c9f50fd\"', '127.0.0.1', '2019-08-08 03:25:59', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1767', 'MrBird', '修改企业信息', '33', 'cc.mrbird.web.controller.CorpAnalysisController.updateCorp()', 'entity: \"cc.mrbird.web.domain.corp.Corp@6babe246\"', '127.0.0.1', '2019-08-08 03:27:41', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1768', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Thu Aug 08 10:50:23 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-08 09:38:07', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1769', 'MrBird', '新增宏观数据', '154', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@1aa2426b\"', '127.0.0.1', '2019-08-08 09:38:44', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1770', 'MrBird', '新增宏观数据', '146', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@16e9b832\"', '127.0.0.1', '2019-08-08 09:39:06', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1771', 'MrBird', '新增宏观数据', '73', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@1a670f93\"', '127.0.0.1', '2019-08-08 09:39:22', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1772', 'MrBird', '新增宏观数据', '69', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@7c14da63\"', '127.0.0.1', '2019-08-08 09:39:34', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1773', 'MrBird', '新增宏观数据', '55', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@b3139ff\"', '127.0.0.1', '2019-08-08 09:39:46', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1774', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Thu Aug 08 17:38:07 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-09 07:38:15', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1775', 'MrBird', '新增宏观数据', '92', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@1cc1b66f\"', '127.0.0.1', '2019-08-09 07:38:46', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1776', 'MrBird', '新增宏观数据', '62', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@270150ee\"', '127.0.0.1', '2019-08-09 07:39:15', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1777', 'MrBird', '新增宏观数据', '75', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@4ba3d723\"', '127.0.0.1', '2019-08-09 07:39:33', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1778', 'MrBird', '新增宏观数据', '79', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@477f7a00\"', '127.0.0.1', '2019-08-09 07:39:54', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1779', 'MrBird', '新增宏观数据', '61', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@ea97a2d\"', '127.0.0.1', '2019-08-09 07:40:11', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1780', 'MrBird', '新增宏观数据', '48', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@6e8a5c6\"', '127.0.0.1', '2019-08-09 07:41:09', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1781', 'MrBird', '访问系统', '4', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Fri Aug 09 15:38:15 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-12 09:23:35', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1782', 'MrBird', '新增宏观数据', '54', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@74b7e993\"', '127.0.0.1', '2019-08-12 09:25:40', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1783', 'MrBird', '新增宏观数据', '64', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@6db1aa92\"', '127.0.0.1', '2019-08-12 09:26:09', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1784', 'MrBird', '新增宏观数据', '49', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@43e9dc3f\"', '127.0.0.1', '2019-08-12 09:26:21', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1785', 'MrBird', '新增宏观数据', '68', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@7daede28\"', '127.0.0.1', '2019-08-12 09:26:32', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1786', 'MrBird', '新增宏观数据', '68', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@454b0e4\"', '127.0.0.1', '2019-08-12 09:26:45', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1787', 'MrBird', '新增宏观数据', '77', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@55a51ce7\"', '127.0.0.1', '2019-08-12 09:27:20', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1788', 'MrBird', '新增宏观数据', '67', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@64d00f7f\"', '127.0.0.1', '2019-08-12 09:27:35', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1789', 'MrBird', '新增宏观数据', '69', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@16707e7f\"', '127.0.0.1', '2019-08-12 09:36:24', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1790', 'MrBird', '新增宏观数据', '262', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@5cbc2b5c\"', '127.0.0.1', '2019-08-12 09:36:47', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1791', 'MrBird', '新增宏观数据', '81', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@4880d305\"', '127.0.0.1', '2019-08-12 09:36:56', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1792', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Mon Aug 12 17:23:35 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-13 03:48:26', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1793', 'MrBird', '新增宏观数据', '75', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@6867a5ad\"', '127.0.0.1', '2019-08-13 03:49:28', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1794', 'MrBird', '新增宏观数据', '42', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@60ee2a48\"', '127.0.0.1', '2019-08-13 03:50:09', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1795', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Tue Aug 13 11:48:26 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-13 10:23:51', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1796', 'MrBird', '新增宏观数据', '97', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@202332fd\"', '127.0.0.1', '2019-08-13 10:24:11', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1797', 'MrBird', '新增宏观数据', '54', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@4f57d8f6\"', '127.0.0.1', '2019-08-13 10:24:28', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1798', 'MrBird', '新增宏观数据', '56', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@69d616fa\"', '127.0.0.1', '2019-08-13 10:24:40', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1799', 'MrBird', '新增宏观数据', '49', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@1c32fd25\"', '127.0.0.1', '2019-08-13 10:24:52', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1800', 'MrBird', '新增宏观数据', '68', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@f00ffff\"', '127.0.0.1', '2019-08-13 10:25:05', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1801', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Tue Aug 13 18:23:51 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-14 10:12:38', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1802', 'MrBird', '新增宏观数据', '91', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@1c6e8b92\"', '127.0.0.1', '2019-08-14 10:13:02', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1803', 'MrBird', '新增宏观数据', '47', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@297218d1\"', '127.0.0.1', '2019-08-14 10:13:50', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1804', 'MrBird', '新增宏观数据', '67', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@5286b2a9\"', '127.0.0.1', '2019-08-14 10:14:04', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1805', 'MrBird', '新增宏观数据', '145', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@289b365e\"', '127.0.0.1', '2019-08-14 10:14:16', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1806', 'MrBird', '新增宏观数据', '68', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@81fe336\"', '127.0.0.1', '2019-08-14 10:14:28', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1807', 'MrBird', '修改宏观数据', '64', 'cc.mrbird.web.controller.FinanceController.updateMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@3d7c7ee6\"', '127.0.0.1', '2019-08-14 10:14:42', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1808', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Wed Aug 14 18:12:38 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-15 10:14:30', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1809', 'MrBird', '新增宏观数据', '231', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@7f1a7ad4\"', '127.0.0.1', '2019-08-15 10:14:52', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1810', 'MrBird', '新增宏观数据', '48', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@39c59004\"', '127.0.0.1', '2019-08-15 10:15:01', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1811', 'MrBird', '新增宏观数据', '105', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@29bbb967\"', '127.0.0.1', '2019-08-15 10:15:19', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1812', 'MrBird', '新增宏观数据', '70', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@6361d31b\"', '127.0.0.1', '2019-08-15 10:15:35', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1813', 'MrBird', '新增宏观数据', '41', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@3f98739d\"', '127.0.0.1', '2019-08-15 10:15:48', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1814', 'MrBird', '新增宏观数据', '39', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@6162fd0b\"', '127.0.0.1', '2019-08-15 10:16:01', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1815', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Thu Aug 15 18:14:30 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-16 12:16:11', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1816', 'MrBird', '新增宏观数据', '114', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@47f9dcc5\"', '127.0.0.1', '2019-08-16 12:16:33', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1817', 'MrBird', '新增宏观数据', '92', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@340873fa\"', '127.0.0.1', '2019-08-16 12:16:52', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1818', 'MrBird', '新增宏观数据', '97', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@6cbd7d9e\"', '127.0.0.1', '2019-08-16 12:17:07', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1819', 'MrBird', '新增宏观数据', '102', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@7c682dcf\"', '127.0.0.1', '2019-08-16 12:17:20', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1820', 'MrBird', '新增宏观数据', '45', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@5cc4bfcf\"', '127.0.0.1', '2019-08-16 12:17:35', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1821', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Fri Aug 16 20:16:11 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-19 12:10:00', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1822', 'MrBird', '新增宏观数据', '50', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@55f6847e\"', '127.0.0.1', '2019-08-19 12:11:14', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1823', 'MrBird', '新增宏观数据', '105', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@4b4fbf64\"', '127.0.0.1', '2019-08-19 12:11:34', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1824', 'MrBird', '新增宏观数据', '49', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@76d1b6a7\"', '127.0.0.1', '2019-08-19 12:11:51', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1825', 'MrBird', '新增宏观数据', '56', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@66fc6b7f\"', '127.0.0.1', '2019-08-19 12:12:04', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1826', 'MrBird', '新增宏观数据', '52', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@3e009823\"', '127.0.0.1', '2019-08-19 12:12:17', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1827', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Mon Aug 19 20:10:00 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-20 10:20:19', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1828', 'MrBird', '新增宏观数据', '72', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@406363c6\"', '127.0.0.1', '2019-08-20 10:20:53', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1829', 'MrBird', '新增宏观数据', '77', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@50db894f\"', '127.0.0.1', '2019-08-20 10:21:10', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1830', 'MrBird', '新增宏观数据', '68', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@605d9e16\"', '127.0.0.1', '2019-08-20 10:21:26', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1831', 'MrBird', '新增宏观数据', '63', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@4c46bc33\"', '127.0.0.1', '2019-08-20 10:21:41', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1832', 'MrBird', '新增宏观数据', '74', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@35c5b509\"', '127.0.0.1', '2019-08-20 10:21:54', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1833', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Tue Aug 20 18:20:18 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-21 10:13:17', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1834', 'MrBird', '新增宏观数据', '246', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@2b441f0a\"', '127.0.0.1', '2019-08-21 10:13:39', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1835', 'MrBird', '新增宏观数据', '59', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@4dabcee5\"', '127.0.0.1', '2019-08-21 10:13:56', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1836', 'MrBird', '新增宏观数据', '142', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@315edf00\"', '127.0.0.1', '2019-08-21 10:14:07', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1837', 'MrBird', '新增宏观数据', '81', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@7e2fc557\"', '127.0.0.1', '2019-08-21 10:14:18', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1838', 'MrBird', '新增宏观数据', '51', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@3698e575\"', '127.0.0.1', '2019-08-21 10:14:32', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1839', 'MrBird', '访问系统', '1', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Wed Aug 21 18:13:16 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-22 09:49:45', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1840', 'MrBird', '新增宏观数据', '133', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@3715db70\"', '127.0.0.1', '2019-08-22 09:50:11', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1841', 'MrBird', '新增宏观数据', '56', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@279287ed\"', '127.0.0.1', '2019-08-22 09:50:29', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1842', 'MrBird', '新增宏观数据', '70', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@34dd75d0\"', '127.0.0.1', '2019-08-22 09:50:46', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1843', 'MrBird', '新增宏观数据', '47', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@2322b1a8\"', '127.0.0.1', '2019-08-22 09:50:59', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1844', 'MrBird', '新增宏观数据', '78', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@41742d46\"', '127.0.0.1', '2019-08-22 09:51:13', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1845', 'MrBird', '访问系统', '2', 'cc.mrbird.system.controller.LoginController.index()', 'user: \"User{userId=4, username=\'MrBird\', password=\'42ee25d1e43e9f57119a00d0a39e5250\', deptId=5, deptName=\'null\', email=\'mrbird@hotmail.com\', mobile=\'13455533222\', status=\'1\', crateTime=Wed Dec 27 23:47:19 CST 2017, modifyTime=Wed Mar 21 17:05:12 CST 2018, lastLoginTime=Thu Aug 22 17:49:44 CST 2019, ssex=\'0\', theme=\'green\', avatar=\'default.jpg\', description=\'我是作者。\', roleName=\'null\'}\"  org.springframework.validation.BindingResult.user: \"org.springframework.validation.BeanPropertyBindingResult: 0 errors\"', '127.0.0.1', '2019-08-23 10:02:40', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1846', 'MrBird', '新增宏观数据', '57', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@34dd75d0\"', '127.0.0.1', '2019-08-23 10:03:14', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1847', 'MrBird', '新增宏观数据', '91', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@2322b1a8\"', '127.0.0.1', '2019-08-23 10:03:31', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1848', 'MrBird', '新增宏观数据', '88', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@9ae78f5\"', '127.0.0.1', '2019-08-23 10:03:45', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1849', 'MrBird', '新增宏观数据', '98', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@66362c62\"', '127.0.0.1', '2019-08-23 10:03:58', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1850', 'MrBird', '新增宏观数据', '89', 'cc.mrbird.web.controller.FinanceController.addMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@65a3ec23\"', '127.0.0.1', '2019-08-23 10:04:12', '内网IP|0|0|内网IP|内网IP');
+INSERT INTO `t_log` VALUES ('1851', 'MrBird', '修改宏观数据', '88', 'cc.mrbird.web.controller.FinanceController.updateMacrography()', 'entity: \"cc.mrbird.web.domain.FinanceTrend@15cf80a4\"', '127.0.0.1', '2019-08-23 10:06:00', '内网IP|0|0|内网IP|内网IP');
 
 -- ----------------------------
 -- Table structure for t_menu
@@ -2176,7 +2356,7 @@ CREATE TABLE `t_user` (
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES ('4', 'MrBird', '42ee25d1e43e9f57119a00d0a39e5250', '5', 'mrbird@hotmail.com', '13455533222', '1', '2017-12-27 15:47:19', '2018-03-21 09:05:12', '2019-08-07 07:05:59', '0', 'green', 'default.jpg', '我是作者。');
+INSERT INTO `t_user` VALUES ('4', 'MrBird', '42ee25d1e43e9f57119a00d0a39e5250', '5', 'mrbird@hotmail.com', '13455533222', '1', '2017-12-27 15:47:19', '2018-03-21 09:05:12', '2019-08-23 10:02:40', '0', 'green', 'default.jpg', '我是作者。');
 INSERT INTO `t_user` VALUES ('6', 'tester', '243e29429b340192700677d48c09d992', '6', 'tester@qq.com', '13888888888', '1', '2017-12-27 17:35:14', '2018-03-27 09:21:08', '2018-01-23 09:17:27', '1', 'teal', 'default.jpg', null);
 INSERT INTO `t_user` VALUES ('23', 'scott', 'ac3af72d9f95161a502fd326865c2f15', '6', 'scott@qq.com', '15134627380', '1', '2017-12-29 16:16:39', '2018-03-29 16:18:36', '2018-03-20 17:59:04', '0', 'blue-grey', 'default.jpg', '我是scott，嗯嗯');
 INSERT INTO `t_user` VALUES ('24', 'smith', '228208eafc74e48c44619cc543fc0efe', '3', 'smith@qq.com', '13364754932', '1', '2017-12-29 16:21:31', '2018-02-27 08:48:16', '2018-02-27 08:48:27', '1', 'teal', 'default.jpg', null);
